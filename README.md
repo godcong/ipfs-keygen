@@ -1,6 +1,6 @@
 # ipfs-keygen
 
-## 给予IPFS官方接口的swarm.key生成工具
+## 基于IPFS官方接口的swarm.key生成工具
 
 example:
 ```
