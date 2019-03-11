@@ -12,6 +12,8 @@ import (
 var file = flag.String("file", "swarm.key", "set the key output path")
 
 func main() {
+	flag.Parse()
+
 	_ = os.MkdirAll(filepath.Dir(*file), os.ModePerm)
 	openFile, e := os.OpenFile(*file, os.O_CREATE|os.O_SYNC|os.O_RDWR, os.ModePerm)
 	if e != nil {
